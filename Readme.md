@@ -2,7 +2,7 @@
 
 A multi-player tool for GTA-5 written 5 years ago,it's not fit now.
 
-Based on CakeMP,developing......
+Based on CakeMP
 
 ## Run
 
