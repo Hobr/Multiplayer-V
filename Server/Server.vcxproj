@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B18B5088-7707-389E-B1A1-12BA69033875}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>Server</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\Project\Multiplayer-V\Server\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Server.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Server</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)Server\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Server.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Server</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\Project\Multiplayer-V\Server\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Server.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Server</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\Project\Multiplayer-V\Server\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Server.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Server</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Project\Multiplayer-V\Server\src;F:\Project\Multiplayer-V\Libs\ENet\include;F:\Project\Multiplayer-V\Server\..\Libs\glm;F:\Project\Multiplayer-V\Server\..\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Project\Multiplayer-V\Server\src;F:\Project\Multiplayer-V\Libs\ENet\include;F:\Project\Multiplayer-V\Server\..\Libs\glm;F:\Project\Multiplayer-V\Server\..\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Project\Multiplayer-V\Server\src;F:\Project\Multiplayer-V\Libs\ENet\include;F:\Project\Multiplayer-V\Server\..\Libs\glm;F:\Project\Multiplayer-V\Server\..\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>F:\Project\Multiplayer-V\Libs\ENet\enet.lib;ws2_32.lib;winmm.lib;Ws2_32.lib;WinMM.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86 /SAFESEH:NO</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Project/Multiplayer-V/Server/Debug/Server.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Project/Multiplayer-V/Server/Debug/Server.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Server\src;$(SolutionDir)Libs\ENet\include;$(SolutionDir)Libs\glm;$(SolutionDir)Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Project\Multiplayer-V\Server\src;F:\Project\Multiplayer-V\Libs\ENet\include;F:\Project\Multiplayer-V\Server\..\Libs\glm;F:\Project\Multiplayer-V\Server\..\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Project\Multiplayer-V\Server\src;F:\Project\Multiplayer-V\Libs\ENet\include;F:\Project\Multiplayer-V\Server\..\Libs\glm;F:\Project\Multiplayer-V\Server\..\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)Libs\ENet\enet.lib;ws2_32.lib;winmm.lib;Ws2_32.lib;WinMM.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86 /SAFESEH:NO</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(SolutionDir)Server/Release/Server.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)Server/Release/Server.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Project\Multiplayer-V\Server\src;F:\Project\Multiplayer-V\Libs\ENet\include;F:\Project\Multiplayer-V\Server\..\Libs\glm;F:\Project\Multiplayer-V\Server\..\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Project\Multiplayer-V\Server\src;F:\Project\Multiplayer-V\Libs\ENet\include;F:\Project\Multiplayer-V\Server\..\Libs\glm;F:\Project\Multiplayer-V\Server\..\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Project\Multiplayer-V\Server\src;F:\Project\Multiplayer-V\Libs\ENet\include;F:\Project\Multiplayer-V\Server\..\Libs\glm;F:\Project\Multiplayer-V\Server\..\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>F:\Project\Multiplayer-V\Libs\ENet\enet.lib;ws2_32.lib;winmm.lib;Ws2_32.lib;WinMM.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Project/Multiplayer-V/Server/MinSizeRel/Server.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Project/Multiplayer-V/Server/MinSizeRel/Server.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Project\Multiplayer-V\Server\src;F:\Project\Multiplayer-V\Libs\ENet\include;F:\Project\Multiplayer-V\Server\..\Libs\glm;F:\Project\Multiplayer-V\Server\..\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Project\Multiplayer-V\Server\src;F:\Project\Multiplayer-V\Libs\ENet\include;F:\Project\Multiplayer-V\Server\..\Libs\glm;F:\Project\Multiplayer-V\Server\..\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Project\Multiplayer-V\Server\src;F:\Project\Multiplayer-V\Libs\ENet\include;F:\Project\Multiplayer-V\Server\..\Libs\glm;F:\Project\Multiplayer-V\Server\..\Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>F:\Project\Multiplayer-V\Libs\ENet\enet.lib;ws2_32.lib;winmm.lib;Ws2_32.lib;WinMM.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Project/Multiplayer-V/Server/RelWithDebInfo/Server.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Project/Multiplayer-V/Server/RelWithDebInfo/Server.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Project\Multiplayer-V\Server\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/Project/Multiplayer-V/Server/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HF:/Project/Multiplayer-V/Server -BF:/Project/Multiplayer-V/Server --check-stamp-file F:/Project/Multiplayer-V/Server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/Project/Multiplayer-V/Server/CMakeLists.txt;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;F:\Project\Multiplayer-V\Server\CMake\FindENet.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeCCompiler.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeCXXCompiler.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeRCCompiler.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeSystem.cmake;F:\Project\Multiplayer-V\Server\CMakeLists.txt;F:\Project\Multiplayer-V\Server\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\Project\Multiplayer-V\Server\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/Project/Multiplayer-V/Server/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HF:/Project/Multiplayer-V/Server -BF:/Project/Multiplayer-V/Server --check-stamp-file F:/Project/Multiplayer-V/Server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/Project/Multiplayer-V/Server/CMakeLists.txt;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;F:\Project\Multiplayer-V\Server\CMake\FindENet.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeCCompiler.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeCXXCompiler.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeRCCompiler.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeSystem.cmake;F:\Project\Multiplayer-V\Server\CMakeLists.txt;F:\Project\Multiplayer-V\Server\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\Project\Multiplayer-V\Server\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/Project/Multiplayer-V/Server/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HF:/Project/Multiplayer-V/Server -BF:/Project/Multiplayer-V/Server --check-stamp-file F:/Project/Multiplayer-V/Server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/Project/Multiplayer-V/Server/CMakeLists.txt;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;F:\Project\Multiplayer-V\Server\CMake\FindENet.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeCCompiler.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeCXXCompiler.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeRCCompiler.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeSystem.cmake;F:\Project\Multiplayer-V\Server\CMakeLists.txt;F:\Project\Multiplayer-V\Server\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\Project\Multiplayer-V\Server\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/Project/Multiplayer-V/Server/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HF:/Project/Multiplayer-V/Server -BF:/Project/Multiplayer-V/Server --check-stamp-file F:/Project/Multiplayer-V/Server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/Project/Multiplayer-V/Server/CMakeLists.txt;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\Program Files\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;F:\Project\Multiplayer-V\Server\CMake\FindENet.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeCCompiler.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeCXXCompiler.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeRCCompiler.cmake;F:\Project\Multiplayer-V\Server\CMakeFiles\3.12.18081601-MSVC_2\CMakeSystem.cmake;F:\Project\Multiplayer-V\Server\CMakeLists.txt;F:\Project\Multiplayer-V\Server\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\Project\Multiplayer-V\Server\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\main.cpp" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\Common.h" />
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\Logging.cpp" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\Logging.h" />
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\GameServer.cpp" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\GameServer.h" />
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\Settings.cpp" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\Settings.h" />
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\Network\NetworkManager.cpp" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\Network\NetworkManager.h" />
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\Entities\Player.cpp" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\Entities\Player.h" />
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\Entities\Vehicle.cpp" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\Entities\Vehicle.h" />
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\World\World.cpp" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\World\World.h" />
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\World\Entity.cpp" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\World\Entity.h" />
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\World\Queries\Range.cpp" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\World\Queries\Range.h" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\SharedUtils.h" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\RefCounted.h" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Octree.h" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Enums\NetworkMessageType.h" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Network\NetworkMessage.h" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Network\NetHandle.h" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Network\NetworkEntityType.h" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Network\Structs\CreatePed.h" />
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Network\Structs\CreateVehicle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Project\Multiplayer-V\Server\ZERO_CHECK.vcxproj">
+      <Project>{ECD190F0-2BFA-3E76-931B-BF356A038BB6}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

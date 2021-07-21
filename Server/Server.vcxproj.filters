@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\Logging.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\GameServer.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\Settings.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\Network\NetworkManager.cpp">
+      <Filter>Src\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\Entities\Player.cpp">
+      <Filter>Src\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\Entities\Vehicle.cpp">
+      <Filter>Src\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\World\World.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\World\Entity.cpp">
+      <Filter>Src\World</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Project\Multiplayer-V\Server\src\World\Queries\Range.cpp">
+      <Filter>Src\World\Queries</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\Common.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\Logging.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\GameServer.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\Settings.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\Network\NetworkManager.h">
+      <Filter>Src\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\Entities\Player.h">
+      <Filter>Src\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\Entities\Vehicle.h">
+      <Filter>Src\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\World\World.h">
+      <Filter>Src\World</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\World\Entity.h">
+      <Filter>Src\World</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Server\src\World\Queries\Range.h">
+      <Filter>Src\World\Queries</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\SharedUtils.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\RefCounted.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Octree.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Enums\NetworkMessageType.h">
+      <Filter>Shared\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Network\NetworkMessage.h">
+      <Filter>Shared\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Network\NetHandle.h">
+      <Filter>Shared\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Network\NetworkEntityType.h">
+      <Filter>Shared\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Network\Structs\CreatePed.h">
+      <Filter>Shared\Network\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Project\Multiplayer-V\Shared\Network\Structs\CreateVehicle.h">
+      <Filter>Shared\Network\Structs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Project\Multiplayer-V\Server\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{A5FC4CF4-3585-33F2-945C-1A7099D23195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Enums">
+      <UniqueIdentifier>{FEB34B12-0BDA-3B7C-9536-C8433A52D996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Network">
+      <UniqueIdentifier>{2D79FF03-0FA9-3740-875A-AE4D34D860B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Network\Structs">
+      <UniqueIdentifier>{E18A9822-762A-3BDA-AD1F-20417D106089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{2F735748-2D28-37DE-8E3A-82D3B364D8ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Entities">
+      <UniqueIdentifier>{AA716678-132E-3930-BD0C-F3199E167171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Network">
+      <UniqueIdentifier>{11C6F7AC-0594-31A2-B7E1-5FE66C7E7719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\World">
+      <UniqueIdentifier>{48242BF5-13C4-38FF-B6CE-EB73D8B87EC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\World\Queries">
+      <UniqueIdentifier>{646F723B-843B-3B90-B9A4-8BF565E6A5A0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

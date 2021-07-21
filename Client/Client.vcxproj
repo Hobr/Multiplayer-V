@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D4C72CF9-D29B-45E5-80F3-0B12DEE2E9A5}</ProjectGuid>
+    <RootNamespace>Client</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Client</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Developer|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Developer|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Developer|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Developer|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir);$(SolutionDir)Libs\ScriptHookV\include;$(SolutionDir)Libs\ENet\include;$(SolutionDir)Shared;$(SolutionDir)Libs\glm;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Libs\ScriptHookV\lib;$(SolutionDir)Libs\ENet;$(LibraryPath)</LibraryPath>
+    <TargetExt>.asi</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ScriptHookV.lib;enet64.lib;WS2_32.lib;WinMM.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Developer|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Developer|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Entities\LocalPlayer.cpp" />
+    <ClCompile Include="Entities\Ped.cpp" />
+    <ClCompile Include="Entities\Vehicle.cpp" />
+    <ClCompile Include="GTA\Scaleform.cpp" />
+    <ClCompile Include="GTA\UI\Menu.cpp" />
+    <ClCompile Include="GTA\UI\MenuItem.cpp" />
+    <ClCompile Include="GTA\UI\MenuItemCheckable.cpp" />
+    <ClCompile Include="GTA\UI\Text.cpp" />
+    <ClCompile Include="GTA\UI\Texture.cpp" />
+    <ClCompile Include="GTA\UI\UI.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="System\CakeDiscord.cpp" />
+    <ClCompile Include="System\Interface\Chat.cpp" />
+    <ClCompile Include="Libs\inih\ini.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Entities\Player.cpp" />
+    <ClCompile Include="Network\NetworkManager.cpp" />
+    <ClCompile Include="Scripts\CleanWorld.cpp" />
+    <ClCompile Include="Scripts\Game.cpp" />
+    <ClCompile Include="Common.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="System\Entity.cpp" />
+    <ClCompile Include="System\Interface\FPSCounter.cpp" />
+    <ClCompile Include="System\Interface\Interface.cpp" />
+    <ClCompile Include="System\Interface\MainMenu.cpp" />
+    <ClCompile Include="GTA\ScriptCam.cpp" />
+    <ClCompile Include="System\Settings.cpp" />
+    <ClCompile Include="System\Cake.cpp" />
+    <ClCompile Include="Utils\AppMem.cpp" />
+    <ClCompile Include="Utils\Formatting.cpp" />
+    <ClCompile Include="Utils\Logging.cpp" />
+    <ClCompile Include="Utils\Models.cpp" />
+    <ClCompile Include="Utils\Parsing.cpp" />
+    <ClCompile Include="Utils\Sounds.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Entities\LocalPlayer.h" />
+    <ClInclude Include="Entities\Ped.h" />
+    <ClInclude Include="Entities\Vehicle.h" />
+    <ClInclude Include="Enums\AudioFlags.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Entities\Player.h" />
+    <ClInclude Include="Enums\GameControl.h" />
+    <ClInclude Include="Enums\GameScripts.h" />
+    <ClInclude Include="Enums\OnFootMoveTypes.h" />
+    <ClInclude Include="GTA\Scaleform.h" />
+    <ClInclude Include="GTA\UI\Menu.h" />
+    <ClInclude Include="GTA\UI\MenuItem.h" />
+    <ClInclude Include="GTA\UI\MenuItemCheckable.h" />
+    <ClInclude Include="GTA\UI\Text.h" />
+    <ClInclude Include="GTA\UI\UI.h" />
+    <ClInclude Include="GTA\UI\Texture.h" />
+    <ClInclude Include="Libs\inih\ini.h" />
+    <ClInclude Include="Libs\scratch2\s2ref.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="Network\NetworkManager.h" />
+    <ClInclude Include="Network\PlayerInfo.h" />
+    <ClInclude Include="System\CakeDiscord.h" />
+    <ClInclude Include="System\Interface\Chat.h" />
+    <ClInclude Include="System\Entity.h" />
+    <ClInclude Include="System\Interface\FPSCounter.h" />
+    <ClInclude Include="System\Interface\Interface.h" />
+    <ClInclude Include="System\Interface\MainMenu.h" />
+    <ClInclude Include="GTA\ScriptCam.h" />
+    <ClInclude Include="Utils\AppMem.h" />
+    <ClInclude Include="Utils\Average.h" />
+    <ClInclude Include="Utils\Formatting.h" />
+    <ClInclude Include="Utils\Interpolator.h" />
+    <ClInclude Include="Utils\Interval.h" />
+    <ClInclude Include="System\Settings.h" />
+    <ClInclude Include="System\Cake.h" />
+    <ClInclude Include="Scripts\CleanWorld.h" />
+    <ClInclude Include="Scripts\Game.h" />
+    <ClInclude Include="Utils\Logging.h" />
+    <ClInclude Include="Utils\Models.h" />
+    <ClInclude Include="Build.h" />
+    <ClInclude Include="Utils\Parsing.h" />
+    <ClInclude Include="Utils\Sounds.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
